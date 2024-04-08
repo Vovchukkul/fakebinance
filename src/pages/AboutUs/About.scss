@@ -4,6 +4,8 @@
 
   &__header {
     width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
     background-image: url(../../images/ideal-routine-for-pro-forx-trader.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,6 +166,7 @@
     gap: 64px;
     margin-bottom: 143px;
     margin-top: 119px;
+    padding-inline: 179px;
 
     &__top {
       display: flex;
@@ -189,6 +192,160 @@
       max-width: 930px;
       text-align: center;
     }
+  }
+
+  &__trade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-inline: 255px;
+    text-align: center;
+    margin-bottom: 67px;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: rgba(29, 36, 42, 1);
+      max-width: 930px;
+    }
+
+    &__sub {
+      color: rgba(33, 150, 243, 1);
+    }
+
+    &__button {
+      height: 64px;
+      border-radius: 8px;
+      background-color: rgba(33, 150, 243, 1);
+      color: rgba(250, 253, 255, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      padding-inline: 20px;
+    }
+  }
+}
+
+.footer {
+  padding-inline: 169px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  box-sizing: border-box;
+  background-color: rgba(240, 243, 245, 1);
+  display: flex;
+  flex-direction: column;
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  &__first {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  &__logo {
+    max-height: 65px;
+    max-width: 340px;
+    align-self: flex-start;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+    max-width: 330px;
+    margin-bottom: 24px;
+  }
+
+  &__sub {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+    margin-bottom: 12px;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__appstore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 130px;
+    box-sizing: border-box;
+    padding: 8px 6px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 9px;
+    font-weight: 400;
+    text-align: start;
+
+    &__hightext {
+      font-size: 13px;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    gap: 40px;
+
+    &__group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(29, 36, 42, 1);
+    margin-bottom: 4px;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(29, 36, 42, 1);
   }
 }
 

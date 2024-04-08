@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
 import { Navbar } from '../../components/Navbar/Navbar';
+import logo from '../../images/logo.svg';
 import first_img from '../../images/essentional.svg';
 import second_img from '../../images/search.svg';
 import arrow_right from '../../images/arrow.svg';
 import vision from '../../images/vision.png';
 import mission from '../../images/second_vision.png';
 import arrow_type from '../../images/arrow_type.svg';
+import apple from '../../images/ant-design_apple-filled.svg';
+import google from '../../images/logos_google-play-icon.svg';
+import footer_first from '../../images/footer__first.svg';
+import footer_second from '../../images/location.svg';
+import footer_third from '../../images/message.svg';
 import './About.scss';
 import { AboutSlider } from '../../components/AboutSlider/AboutSlider';
 
@@ -77,6 +83,73 @@ export const About = () => {
         </div>
         <AboutSlider />
       </section>
+      <section className="about__trade">
+        <p className="about__trade__title">
+          All of this and much more dedicated from <span className='about__trade__sub'>Tradiant</span> to your success
+        </p>
+        <button className='about__trade__button'>Trade with Us</button>
+      </section>
+      <footer className="footer">
+        <div className="footer__wrap">
+          <div className="footer__first">
+            <img src={logo} alt="logo" className="footer__logo" />
+            <p className="footer__text">Maximize your investment in the capital market world with the convenience and various features provided by Tradiant.</p>
+            <p className="footer__sub">Unduh Aplikasi</p>
+            <div className="footer__group">
+              <button className="footer__appstore">
+                <img src={apple} alt="apple_icon" />
+                <p className="footer__appstore__text">Download on the <span className='footer__appstore__hightext'>AppStore</span></p>
+              </button>
+              <button className="footer__appstore">
+                <img src={google} alt="google_icon" />
+                <p className="footer__appstore__text">GET IT ON <span className='footer__appstore__hightext'>Google Play</span></p>
+              </button>
+            </div>
+          </div>
+          <div className="footer__middle">
+            <ul className="footer__middle__companies footer__list">
+              <li className="footer__middle__link footer__title">Companies</li>
+              <li className="footer__middle__link">About Us</li>
+              <li className="footer__middle__link">Journey</li>
+              <li className="footer__middle__link">Blog</li>
+              <li className="footer__middle__link">Contact</li>
+              <li className="footer__middle__link">Help</li>
+            </ul>
+            <ul className="footer__middle__resources footer__list">
+              <li className="footer__middle__link footer__title">Resources</li>
+              <li className="footer__middle__link">About Us</li>
+              <li className="footer__middle__link">Journey</li>
+              <li className="footer__middle__link">Blog</li>
+              <li className="footer__middle__link">Contact</li>
+              <li className="footer__middle__link">Help</li>
+            </ul>
+            <ul className="footer__middle__help footer__list">
+              <li className="footer__middle__link footer__title">Help</li>
+              <li className="footer__middle__link">House Rules</li>
+              <li className="footer__middle__link">Our Terms</li>
+              <li className="footer__middle__link">Privacy & Policy</li>
+            </ul>
+            <ul className="footer__middle__contact footer__list">
+              <li className="footer__middle__link footer__title">Contact Us</li>
+              <li className="footer__middle__group">
+                <img src={footer_first} alt="img" />
+                <span className='footer__midle__item'>(480) 555-0103</span>
+              </li>
+              <li className="footer__middle__group">
+                <img src={footer_second} alt="img" />
+                <span className='footer__midle__item'>6391 Elgin St.Celina, Delaware 10299</span>
+              </li>
+              <li className="footer__middle__group">
+                <img src={footer_third} alt="img" />
+                <span className='footer__midle__item'>hub@tradiant.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      <div className="footer__copyright">
+        <p className="footer__copyright__text">Copyright @Tradiant 2022. All Rights Reserved.</p>
+      </div>
     </div>
   );
 }
