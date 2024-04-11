@@ -1,0 +1,174 @@
+@import './../components/variables.scss';
+@import './../components/fonts.scss';
+@import './../components/mixins.scss';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    position: relative;
+    overflow-x: hidden;
+
+    .main {
+        background-image: url(./../images/mainBackground.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100vw;
+        height: 86vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        &__title {
+            @include mainHeading();
+        }
+
+        &__caption{
+            @include bodyM(center);
+            margin-top: 12px;
+        }
+
+        &__button {
+            @include button(180px, 64px);
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+    }
+
+    .section__whyUs {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        align-items: center;
+        margin: 100px;
+
+        &__caption{
+            color: $primary500;
+            font-size: $agL;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        &__title {
+            @include heading(left);
+            margin-top: .1rem;
+        }
+
+        &__text {
+            @include bodyM(left);
+            margin-top: .8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &__button {
+            @include button(158px, 56px)
+        }
+
+        @media (max-width:1440px){
+            &__title {
+                font-size: $ag4;
+                line-height: 48px;
+            }
+    
+            &__text {
+                font-size: $agS;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .section__whyUs__second{
+        flex-direction: row-reverse;
+        margin-top: 200px;
+    }
+
+    .section__advantages {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 4.75rem;
+
+        &__title{
+            @include heading(center);
+            margin-top: 5rem;
+        }
+
+        &__text{
+            @include bodyM(center);
+            margin-top: .8rem;
+        }
+
+        &__cards {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 3rem;
+
+            &__item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                width: 295px;
+                height: 340px;
+
+                border: 1px solid $gray200;
+                border-radius: 12px;
+                -webkit-box-shadow: 0px 8px 14px 0px #bfbfbf;
+                -moz-box-shadow: 0px 8px 14px 0px #bfbfbf;
+                box-shadow: 0px 8px 14px 0px #bfbfbf;
+                transition: 333ms;
+
+                &:hover {
+                    -webkit-box-shadow: 0px 8px 14px 0px $primary300;
+                    -moz-box-shadow: 0px 8px 14px 0px $primary300;
+                    box-shadow: 0px 8px 14px 0px $primary300;
+                    cursor: pointer;
+                }
+
+                #cards__image {
+                    width: 80px;
+                    height: 80px;
+                    margin-top: 1.5rem;
+                }
+
+                &__title {
+                    margin-top: 1.5rem;
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 600;
+                    font-size: $agL;
+                }
+
+                &_text {
+                    @include bodyM(center);
+                    margin-top: .8rem;
+                }
+            }
+        }
+    }
+
+    .section__testimonials{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 7.7rem;
+
+        background-color: $primary0;
+
+        &__title {
+            @include heading(center);
+            margin-top: 6rem;
+        }
+
+        &__caption {
+            @include bodyM(center);
+            margin-top: .8rem;
+            margin-bottom: 4rem;
+        }
+    }
+}
