@@ -1,0 +1,400 @@
+.about {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    width: 100%;
+    width: 100vw;
+    box-sizing: border-box;
+    background-image: url(../../images/ideal-routine-for-pro-forx-trader.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+    display: flex;
+    align-items: center;
+    padding-left: 80px;
+    margin-bottom: 107px;
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      max-width: 539px;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(29, 36, 42, 1);
+      margin-bottom: 12px;
+    }
+
+    &__subtitle {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(92, 113, 132, 1);
+      margin-bottom: 40px;
+    }
+
+    &__btn {
+      display: flex;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      height: 64px;
+      max-width: 180px;
+      padding-inline: 32px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border: none;
+      background-color: rgba(33, 150, 243, 1);
+      color: rgba(250, 253, 255, 1);
+    }
+  }
+
+  &__trust {
+    padding-inline: 173px;
+
+    &__wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 930px;
+      margin-bottom: 64px;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: rgba(29, 36, 42, 1);
+      margin: 12px;
+    }
+
+    &__subtitle {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(92, 113, 132, 1);
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 120px;
+
+      margin-bottom: 107px;
+    }
+  }
+
+  &__vision {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-inline: 141px;
+    margin-bottom: 66px;
+
+    &__img {
+      width: 544px;
+      height: 408px;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      max-width: 534px;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: rgba(29, 36, 42, 1);
+      margin-bottom: 12px;
+    }
+
+    &__subtitle {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(92, 113, 132, 1);
+      margin-bottom: 24px;
+    }
+
+    &__group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    &__link {
+      font-size: 16px;
+      font-weight: 600;
+      color: rgba(33, 150, 243, 1);
+    }
+
+    &__arrow {
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  &__values {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    margin-bottom: 143px;
+    margin-top: 119px;
+    padding-inline: 179px;
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: rgba(29, 36, 42, 1);
+    }
+
+    &__subtitle {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      font-weight: 400;
+      color: rgba(92, 113, 132, 1);
+      max-width: 930px;
+      text-align: center;
+    }
+  }
+
+  &__trade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding-inline: 255px;
+    text-align: center;
+    margin-bottom: 67px;
+
+    &__title {
+      margin: 0;
+      padding: 0;
+      font-size: 40px;
+      font-weight: 700;
+      color: rgba(29, 36, 42, 1);
+      max-width: 930px;
+    }
+
+    &__sub {
+      color: rgba(33, 150, 243, 1);
+    }
+
+    &__button {
+      height: 64px;
+      border-radius: 8px;
+      background-color: rgba(33, 150, 243, 1);
+      color: rgba(250, 253, 255, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      padding-inline: 20px;
+    }
+  }
+}
+
+.footer {
+  padding-inline: 169px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  box-sizing: border-box;
+  background-color: rgba(240, 243, 245, 1);
+  display: flex;
+  flex-direction: column;
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+  }
+
+  &__first {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+  }
+
+  &__logo {
+    max-height: 65px;
+    max-width: 340px;
+    align-self: flex-start;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+    max-width: 330px;
+    margin-bottom: 24px;
+  }
+
+  &__sub {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+    margin-bottom: 12px;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  &__appstore {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    max-width: 130px;
+    box-sizing: border-box;
+    padding: 8px 6px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 9px;
+    font-weight: 400;
+    text-align: start;
+
+    &__hightext {
+      font-size: 13px;
+    }
+  }
+
+  &__middle {
+    display: flex;
+    gap: 40px;
+
+    &__group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+  }
+
+  &__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(29, 36, 42, 1);
+    margin-bottom: 4px;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(29, 36, 42, 1);
+  }
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 487px;
+
+  &__img {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 24px;
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(29, 36, 42, 1);
+    margin-bottom: 12px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(92, 113, 132, 1);
+    text-align: center;
+    margin-bottom: 24px;
+    max-width: 470px;
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(33, 150, 243, 1);
+  }
+}
+
+.top {
+  margin-top: 66px;
+}
